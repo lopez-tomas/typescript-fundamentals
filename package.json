@@ -1,0 +1,28 @@
+{
+  "name": "typescript-fundamentals",
+  "version": "1.0.0",
+  "description": "Learning TypeScript Fundamentals",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lopez-tomas/typescript-fundamentals.git"
+  },
+  "keywords": [
+    "TypeScript",
+    "TS",
+    "JavaScript",
+    "JS"
+  ],
+  "author": "Tomás López (Frontend Developer)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lopez-tomas/typescript-fundamentals/issues"
+  },
+  "homepage": "https://github.com/lopez-tomas/typescript-fundamentals#readme",
+  "devDependencies": {
+    "typescript": "^4.7.2"
+  }
+}
