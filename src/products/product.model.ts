@@ -1,8 +1,14 @@
-export type Sizes = 'S' | 'M' | 'L' | 'XL';
+type Sizes = 'S' | 'M' | 'L' | 'XL';
 
-export type Product = {
+type Product = {
+  id: number,
   title: string,
   createdAt: Date,
   stock: number,
   size?: Sizes,
 };
+
+export {
+  Sizes,
+  Product
+}

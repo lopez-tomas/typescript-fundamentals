@@ -1,17 +1,27 @@
-import { Product} from './product.model';
+import { Product } from './product.model';
 
-export const products: Product[] = [];
+let lastProductId: number = 1;
+let products: Product[] = [];
 
-export const addProduct = (data: Product) => {
+const addProduct = (data: Product) => {
   products.push(data);
+  lastProductId++;
 }
 
-export const removeProduct = (data: Product) => {
-  products.filter(product => product !== data);
+const removeProduct = (id: number) => {
+  products = products.filter(product => product.id !== id);
 }
 
-export const calculateStock = ():number => {
+const calculateTotalStock = ():number => {
   let total: number = products.reduce((acc, product) => acc + product.stock, 0);
 
   return total;
+}
+
+export {
+  lastProductId,
+  products,
+  addProduct,
+  removeProduct,
+  calculateTotalStock
 }
